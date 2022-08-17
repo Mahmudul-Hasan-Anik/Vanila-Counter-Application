@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="./output/tailwind.css" />
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+  </head>
+  <body>
+   <div class=" h-screen flex items-center  flex-col" id="container">
+      <h2 class=" font-bold text-3xl my-10">Simple Counter Application</h2>
+      <div class="bg-slate-50 p-3 w-96 text-center shadow-lg mb-4">
+        <p class=" font-semibold text-2xl mt-3" id="count-1">0</p>
+        <div class="mt-8 mb-4">
+          <button class="px-4 py-1 font-semibold bg-green-600 rounded-full border text-white hover:bg-green-700" id="increment-1">Increment</button>
+          <button class="px-4 py-1 font-semibold bg-red-600 rounded-full border text-white  hover:bg-red-700" id="decrement-1" >Decrement</button>
+        </div>
+      </div>
+
+      <div class="my-4 " id="newCounter">
+        <button class="px-4 py-1 font-semibold bg-green-600 bg-sky-50 rounded-full border text-white  hover:bg-green-700" id="addCounter">Add +</button>
+        <button class="px-4 py-1 font-semibold bg-red-600 rounded-full border text-white" id="reset">Reset</button>
+      </div>
+   </div>
+
+   <script src="./app.js"></script>
+  </body>
+</html>
